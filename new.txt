@@ -1,2 +1,46 @@
-hello vvce
-devops lab 3
+1st prog
+git config --global user.name "PranavSBhat"
+git config --global user.email "pranav@email.com"
+mkdir repository1
+cd repository1
+git init
+git status
+echo "DevOps Lab File" > file1.txt
+git status
+git add file1.txt
+git commit -m "First commit"
+git log
+git remote add origin https://github.com/bhatspranav7/DEVOPSLAB.git
+git push -u origin main
+git clone https://github.com/bhatspranav7/DEVOPSLAB.git
+git reset --hard
+
+2nd prg
+git clone 
+cd fish-speech
+git checkout -b feature
+echo "text" > demo.txt
+git add .
+git commit -m "added file"
+git diff
+git add .
+git commit -m "second commit"
+git checkout main
+git merge feature
+git push origin main
+git checkout -b branch1
+echo "branch1" > conflict.txt
+git add .
+git commit -m "branch1 edit"
+git checkout main
+git checkout -b branch2
+echo "branch2" > conflict.txt
+git add .
+git commit -m "branch2 edit"
+git checkout main
+git merge branch1
+git merge branch2
+git add conflict.txt
+git commit -m "conflict resolved"
+git pull origin main
+
